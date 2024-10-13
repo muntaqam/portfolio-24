@@ -1,16 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import '../ToastifyCustom.css';
 
 function SocialLinks() {
-    const [message, setMessage] = useState('');
-    const [visible, setVisible] = useState(false);
 
-    const copyToClipboard = (text) => {
+    const email = "munma980@gmail.com"; // Replace with your actual email
+    const phone = "3479638176"; // Replace with your actual phone number
+
+    const copyToClipboard = (text, message) => {
         navigator.clipboard.writeText(text).then(() => {
-            setMessage(`${text} copied!`);
-            setVisible(true);
-            setTimeout(() => {
-                setVisible(false);
-            }, 2000);
+            // Use toast without the default icon and with a custom one
+            toast.success(
+                <div>
+                    🔗 {" " + message}
+                </div>,
+                {
+                    icon: false, // Disable the default check mark icon
+                }
+            );
         });
     };
 
@@ -29,7 +37,7 @@ function SocialLinks() {
 
             {/* Email Icon */}
             <button
-                onClick={() => copyToClipboard("youremail@example.com")} // Replace with your actual email
+                onClick={() => copyToClipboard(email, "Email copied!")} // Pass email and message
                 className="text-slate-400 hover:text-white cursor-pointer"
             >
                 <i className="fas fa-envelope fa-lg"></i>
@@ -37,18 +45,23 @@ function SocialLinks() {
 
             {/* Phone Icon */}
             <button
-                onClick={() => copyToClipboard("+1234567890")} // Replace with your actual phone number
+                onClick={() => copyToClipboard(phone, "Phone number copied!")} // Pass phone and message
                 className="text-slate-400 hover:text-white cursor-pointer"
             >
                 <i className="fas fa-phone fa-lg"></i>
             </button>
 
-            {/* Pop-Up Message */}
-            {visible && (
-                <div className="absolute bg-gray-800 text-white p-2 rounded mt-2">
-                    {message}
-                </div>
-            )}
+
+            {/* Toast Container */}
+            <ToastContainer
+                position="bottom-center"
+                autoClose={2000}
+                hideProgressBar={false}
+                closeOnClick
+                pauseOnHover
+                draggable
+                pauseOnFocusLoss
+            />
         </div>
     );
 }
