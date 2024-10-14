@@ -13,7 +13,10 @@ const ExperienceCard = ({ role, company, duration, description }) => {
                 </h3>
                 <p className="text-xs text-slate-500 mt-2 h-12 overflow-hidden">{description}</p>
             </div>
+
         </div>
+
+
     );
 };
 
