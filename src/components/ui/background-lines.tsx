@@ -1,5 +1,6 @@
 "use client";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
+
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -104,7 +105,7 @@ const SVG = ({
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="2.3"
+          strokeWidth="5.3"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"
@@ -126,7 +127,7 @@ const SVG = ({
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="2.3"
+          strokeWidth="5.3"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"

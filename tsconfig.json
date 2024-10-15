@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "jsx": "react", // Ensure JSX is enabled
+        "allowJs": true, // Allow JavaScript files
+        "noEmit": true, // Do not output compiled JS files
+        "esModuleInterop": true, // For proper import handling
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

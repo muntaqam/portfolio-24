@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { BackgroundLines } from './ui/background-lines';  // Ensure the import path is correct
 import SocialLinks from './SocialLinks';
 
 function HighlightDiv() {
@@ -11,18 +12,16 @@ function HighlightDiv() {
         const options = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.3// Adjust for how much of the section needs to be visible
+            threshold: 0.3 // Adjust for how much of the section needs to be visible
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                console.log(entry.target.id, entry.isIntersecting);
                 if (entry.isIntersecting) {
                     setActiveSection(entry.target.id);
                 } else {
                     if (entry.target.id === activeSection) {
                         setActiveSection(''); // Reset when scrolling out
-                        console.log(entry.target.id);
                     }
                 }
             });
@@ -38,30 +37,35 @@ function HighlightDiv() {
         return () => {
             observer.disconnect();
         };
-    }, [activeSection]); // Added activeSection as a dependency
-
-
+    }, [activeSection]);
 
     return (
-        <div className="p-0 h-auto lg:flex lg:flex-col lg:justify-between lg:space-y-4"> {/* Adjusted space-y */}
-            {/* Title: Name */}
-            <div>
-                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                    <a href="/">Muntaqa Maahi</a>
-                </h1>
-                <h2 className="mt-1 text-lg font-medium tracking-tight text-slate-100 sm:text-xl">
-                    Software Engineer
-                </h2>
+        <div className="relative p-0 h-auto lg:flex lg:flex-col lg:justify-between lg:space-y-4">
+
+            {/* Name Section */}
+            <div className="relative flex  items-center">
+                {/* Background Lines directly behind Muntaqa Maahi */}
+                <BackgroundLines className="absolute z-0 opacity-80 w-[300px] h-[350px] top-[-30px]" svgOptions={{ duration: 10 }} />
+
+                {/* Muntaqa Maahi Text */}
+                <div className="relative z-10 text-center">
+                    <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                        <a href="/">Muntaqa Maahi</a>
+                    </h1>
+                    <h2 className="mt-1 text-lg font-medium tracking-tight text-slate-100 sm:text-xl">
+                        Software Engineer
+                    </h2>
+                </div>
             </div>
 
             {/* Description */}
-            <p className="mt-2 max-w-xs leading-normal text-slate-500"> {/* Adjusted margin here */}
+            <p className="mt-2 max-w-xs leading-normal text-slate-500">
                 Transforming ideas into solutions through hands-on projects.
             </p>
 
-            {/* Links */}
+            {/* Navigation Links */}
             <nav className="nav hidden lg:block" aria-label="In-page jump links">
-                <ul className="mt-4 w-max"> {/* Ensure this matches the spacing you want */}
+                <ul className="mt-4 w-max">
                     {['About', 'Experience', 'Projects'].map((item) => (
                         <li key={item}>
                             <a className="group flex items-center py-3" href={`#${item.toLowerCase()}`}>
