@@ -12,3 +12,36 @@
   -ms-overflow-style: none; /* Internet Explorer and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+section {
+    min-height: 100vh; /* Ensures each section takes at least one full viewport height */
+    
+}
+
+
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  z-index: -1;
+  opacity: 0.7;
+}
+

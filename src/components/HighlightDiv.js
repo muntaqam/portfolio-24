@@ -1,9 +1,49 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import SocialLinks from './SocialLinks';
 
 function HighlightDiv() {
+
+    const [activeSection, setActiveSection] = useState('');
+
+    useEffect(() => {
+        const sections = ['about', 'experience', 'projects'];
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3// Adjust for how much of the section needs to be visible
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                console.log(entry.target.id, entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                } else {
+                    if (entry.target.id === activeSection) {
+                        setActiveSection(''); // Reset when scrolling out
+                        console.log(entry.target.id);
+                    }
+                }
+            });
+        }, options);
+
+        sections.forEach(sectionId => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                observer.observe(section);
+            }
+        });
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [activeSection]); // Added activeSection as a dependency
+
+
+
     return (
-        <div className="p-0 h-auto lg:flex lg:flex-col lg:justify-bet lg:space-y-4"> {/* Adjusted space-y */}
+        <div className="p-0 h-auto lg:flex lg:flex-col lg:justify-between lg:space-y-4"> {/* Adjusted space-y */}
             {/* Title: Name */}
             <div>
                 <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -20,13 +60,13 @@ function HighlightDiv() {
             </p>
 
             {/* Links */}
-            <nav className="nav hidden lg:block " aria-label="In-page jump links">
+            <nav className="nav hidden lg:block" aria-label="In-page jump links">
                 <ul className="mt-4 w-max"> {/* Ensure this matches the spacing you want */}
                     {['About', 'Experience', 'Projects'].map((item) => (
                         <li key={item}>
                             <a className="group flex items-center py-3" href={`#${item.toLowerCase()}`}>
-                                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                                <span className={`nav-indicator mr-4 h-px transition-all duration-300 ${activeSection === item.toLowerCase() ? 'w-16 bg-slate-200' : 'w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-200'} group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none`}></span>
+                                <span className={`nav-text text-xs font-bold uppercase tracking-widest ${activeSection === item.toLowerCase() ? 'text-slate-200' : 'text-slate-500'} group-hover:text-slate-200 group-focus-visible:text-slate-200`}>
                                     {item}
                                 </span>
                             </a>
@@ -37,8 +77,6 @@ function HighlightDiv() {
 
             {/* Social Links */}
             <SocialLinks />
-
-
         </div>
     );
 }
