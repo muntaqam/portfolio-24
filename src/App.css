@@ -25,6 +25,12 @@ body, html {
   overflow: hidden;
 }
 
+body {
+  transform: none;
+  zoom: 1; 
+}
+
+
 .background {
   position: absolute;
   width: 100%;

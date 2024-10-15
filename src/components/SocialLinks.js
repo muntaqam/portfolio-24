@@ -38,7 +38,7 @@ function SocialLinks() {
             {/* Email Icon */}
             <button
                 onClick={() => copyToClipboard(email, "Email copied!")} // Pass email and message
-                className="text-slate-400 hover:text-white cursor-pointer"
+                className="text-slate-400 hover:text-white cursor-pointer "
             >
                 <i className="fas fa-envelope fa-lg"></i>
             </button>

@@ -26,7 +26,7 @@ function RightColumn() {
 
 function App() {
   return (
-    <div className="flex flex-col lg:flex-row gap-x-4 px-4 lg:px-32">
+    <div className="flex flex-col lg:flex-row gap-x-4 px-6 lg:px-32">
       <GridBackgroundDemo />
       <LeftColumn />
       <RightColumn />
