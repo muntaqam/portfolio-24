@@ -19,15 +19,15 @@ section {
 }
 
 
+
 body, html {
   margin: 0;
   height: 100%;
   overflow: hidden;
 }
 
-body {
-  transform: none;
-  zoom: 1; 
+html{
+   zoom: 1.1;
 }
 
 
