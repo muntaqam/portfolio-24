@@ -61,6 +61,7 @@ function SocialLinks() {
                 pauseOnHover
                 draggable
                 pauseOnFocusLoss
+                
             />
         </div>
     );
