@@ -45,7 +45,7 @@ function HighlightDiv() {
             {/* Name Section */}
             <div className="relative flex  items-center">
                 {/* Background Lines directly behind Muntaqa Maahi */}
-                <BackgroundLines className="absolute z-0 opacity-80 w-[300px] h-[350px] top-[-30px]" svgOptions={{ duration: 10 }} />
+                <BackgroundLines className="absolute z-0 opacity-80 w-[250px] h-[150px] top-[-30px]" svgOptions={{ duration: 10 }} />
 
                 {/* Muntaqa Maahi Text */}
                 <div className="relative z-10 text-center">
