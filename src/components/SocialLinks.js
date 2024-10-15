@@ -23,7 +23,7 @@ function SocialLinks() {
     };
 
     return (
-        <div className="flex justify-center space-x-4 pt-24 pr-80">
+        <div className="flex justify-center space-x-4 pt-24 pr-80 z-100">
             {/* Social Icons */}
             <a href="https://github.com/muntaqam" className="text-slate-400 hover:text-white cursor-pointer">
                 <i className="fab fa-github fa-lg"></i>
