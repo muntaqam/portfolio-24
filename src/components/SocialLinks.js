@@ -25,13 +25,13 @@ function SocialLinks() {
     return (
         <div className="flex justify-center space-x-4 pt-24 pr-80 z-100">
             {/* Social Icons */}
-            <a href="https://github.com/muntaqam" className="text-slate-400 hover:text-white cursor-pointer">
+            <a href="https://github.com/muntaqam" className="text-slate-400 hover:text-white cursor-pointer" target="_blank">
                 <i className="fab fa-github fa-lg"></i>
             </a>
-            <a href="https://www.linkedin.com/in/muntaqam/" className="text-slate-400 hover:text-white cursor-pointer">
+            <a href="https://www.linkedin.com/in/muntaqam/" className="text-slate-400 hover:text-white cursor-pointer" target="_blank">
                 <i className="fab fa-linkedin fa-lg"></i>
             </a>
-            <a href="https://www.goodreads.com/user/show/7973694-maahi" className="text-slate-400 hover:text-white cursor-pointer">
+            <a href="https://www.goodreads.com/user/show/7973694-maahi" className="text-slate-400 hover:text-white cursor-pointer" target="_blank">
                 <i className="fab fa-goodreads fa-lg"></i>
             </a>
 
@@ -47,6 +47,7 @@ function SocialLinks() {
             <button
                 onClick={() => copyToClipboard(phone, "Phone number copied!")} // Pass phone and message
                 className="text-slate-400 hover:text-white cursor-pointer"
+
             >
                 <i className="fas fa-phone fa-lg"></i>
             </button>
@@ -61,7 +62,7 @@ function SocialLinks() {
                 pauseOnHover
                 draggable
                 pauseOnFocusLoss
-                
+
             />
         </div>
     );
