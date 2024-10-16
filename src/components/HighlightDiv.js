@@ -52,14 +52,14 @@ function HighlightDiv() {
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         <a href="/">Muntaqa Maahi</a>
                     </h1>
-                    <h2 className="mt-1 text-lg font-medium tracking-tight text-slate-100 sm:text-xl">
+                    <h2 className="mt-1 text-lg font-medium tracking-tight text-teal-400 sm:text-xl">
                         Software Engineer
                     </h2>
                 </div>
             </div>
 
             {/* Description */}
-            <p className="mt-2 max-w-xs leading-normal text-slate-500">
+            <p className="mt-2 max-w-xs leading-normal text-slate-400">
                 Transforming ideas into solutions through hands-on projects.
             </p>
 
