@@ -14,7 +14,7 @@ function LeftColumn() {
 
 function RightColumn() {
   return (
-    <div id="about" className="about-section z-10 w-full lg:w-[50%] overflow-auto lg:h-screen">
+    <div id="about" className="about-section z-10 w-full lg:w-[50%] overflow-auto  hide-scrollbar lg:h-screen">
       <div className="pt-28 pb-10 text-slate-400">
         <TechJourney></TechJourney>
 
