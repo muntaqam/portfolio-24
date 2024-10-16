@@ -105,7 +105,7 @@ const SVG = ({
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="5.3"
+          strokeWidth="10.3"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"
@@ -127,7 +127,7 @@ const SVG = ({
         <motion.path
           d={path}
           stroke={colors[idx]}
-          strokeWidth="5.3"
+          strokeWidth="10.3"
           strokeLinecap="round"
           variants={pathVariants}
           initial="initial"
