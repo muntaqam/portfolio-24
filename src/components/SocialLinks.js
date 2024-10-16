@@ -25,13 +25,13 @@ function SocialLinks() {
     return (
         <div className="flex justify-center space-x-4 pt-24 pr-80 z-100">
             {/* Social Icons */}
-            <a href="https://github.com/muntaqam" className="text-slate-400 hover:text-white cursor-pointer" target="_blank">
+            <a href="https://github.com/muntaqam" className="text-slate-400 hover:text-white cursor-pointer" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github fa-lg"></i>
             </a>
-            <a href="https://www.linkedin.com/in/muntaqam/" className="text-slate-400 hover:text-white cursor-pointer" target="_blank">
+            <a href="https://www.linkedin.com/in/muntaqam/" className="text-slate-400 hover:text-white cursor-pointer" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin fa-lg"></i>
             </a>
-            <a href="https://www.goodreads.com/user/show/7973694-maahi" className="text-slate-400 hover:text-white cursor-pointer" target="_blank">
+            <a href="https://www.goodreads.com/user/show/7973694-maahi" className="text-slate-400 hover:text-white cursor-pointer" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-goodreads fa-lg"></i>
             </a>
 
