@@ -52,3 +52,24 @@ html{
 .fa-phone {
     transform: scaleX(-1);
 }
+
+
+/* mobile view */
+
+@media (max-width: 1024px) {
+  .about-section {
+    padding-top: 16px; /* Adjust top padding for mobile */
+  }
+  .w-full {
+    width: 100%;
+  }
+}
+
+
+/* Enable scrolling on mobile */
+@media (max-width: 1024px) {
+  body, html {
+    overflow: auto;
+  }
+}
+

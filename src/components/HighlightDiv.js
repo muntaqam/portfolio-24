@@ -40,15 +40,18 @@ function HighlightDiv() {
     }, [activeSection]);
 
     return (
-        <div className="relative p-0 h-auto lg:flex lg:flex-col lg:justify-between lg:space-y-4">
+        // <div className="relative p-0 h-auto lg:flex lg:flex-col lg:justify-between lg:space-y-4"> -- mobile view 
+        <div className="flex flex-col items-center p-4 lg:items-start lg:flex-col lg:justify-between lg:space-y-4 text-center lg:text-left max-w-xs lg:max-w-full mx-auto">
 
             {/* Name Section */}
-            <div className="relative flex  items-center">
+            {/* <div className="relative flex  items-center"> -- mobile view*/}
+            <div className="relative flex items-center justify-center lg:justify-start">
                 {/* Background Lines directly behind Muntaqa Maahi */}
-                <BackgroundLines className="absolute z-0 opacity-80 w-[250px] h-[150px] top-[-30px]" svgOptions={{ duration: 10 }} />
-
+                <div className="absolute inset-0 flex justify-center items-center absolute-center">
+                    <BackgroundLines className="absolute  opacity-80 w-[250px] h-[150px] top-[-30px]" svgOptions={{ duration: 10 }} />
+                </div>
                 {/* Muntaqa Maahi Text */}
-                <div className="relative z-10 text-center">
+                <div className="relative text-center">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         <a href="/">Muntaqa Maahi</a>
                     </h1>

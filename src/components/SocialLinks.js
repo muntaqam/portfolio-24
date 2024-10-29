@@ -5,8 +5,9 @@ import '../ToastifyCustom.css';
 
 function SocialLinks() {
 
-    const email = "munma980@gmail.com"; // Replace with your actual email
-    const phone = "3479638176"; // Replace with your actual phone number
+    const email = "munma980@gmail.com";
+    const phone = "3479638176";
+
 
     const copyToClipboard = (text, message) => {
         navigator.clipboard.writeText(text).then(() => {
@@ -16,14 +17,15 @@ function SocialLinks() {
                     🔗 {" " + message}
                 </div>,
                 {
-                    icon: false, // Disable the default check mark icon
+                    icon: false,
                 }
             );
         });
     };
 
     return (
-        <div className="flex justify-center space-x-4 pt-24 pr-80 z-100">
+        // --mobile view <div className="flex justify-center space-x-4 pt-24 pr-80">
+        <div className="flex justify-center space-x-4 mt-6 lg:pt-24 lg:pr-80">
             {/* Social Icons */}
             <a href="https://github.com/muntaqam" className="text-slate-400 hover:text-white cursor-pointer" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github fa-lg"></i>
@@ -46,7 +48,7 @@ function SocialLinks() {
             {/* Phone Icon */}
             <button
                 onClick={() => copyToClipboard(phone, "Phone number copied!")} // Pass phone and message
-                className="text-slate-400 hover:text-white cursor-pointer"
+                className="text-slate-400 hover:text-white cursor-pointer "
 
             >
                 <i className="fas fa-phone fa-lg"></i>
@@ -55,6 +57,7 @@ function SocialLinks() {
 
             {/* Toast Container */}
             <ToastContainer
+
                 position="bottom-center"
                 autoClose={2000}
                 hideProgressBar={false}
@@ -62,6 +65,7 @@ function SocialLinks() {
                 pauseOnHover
                 draggable
                 pauseOnFocusLoss
+                style={{ zIndex: 9999 }}
 
             />
         </div>

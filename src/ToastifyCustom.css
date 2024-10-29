@@ -1,3 +1,7 @@
 .Toastify__progress-bar {
     background-color: #0f605c !important; 
 }
+
+.Toastify__toast-container {
+    z-index: 9999 !important;
+}

@@ -14,7 +14,7 @@ function LeftColumn() {
 
 function RightColumn() {
   return (
-    <div id="about" className="about-section z-10 w-full lg:w-[50%] overflow-auto  hide-scrollbar lg:h-screen">
+    <div id="about" className="about-section z-20 w-full lg:w-[50%] overflow-auto  hide-scrollbar lg:h-screen">
       <div className="pt-28 pb-10 text-slate-400">
         <TechJourney></TechJourney>
 
@@ -26,8 +26,10 @@ function RightColumn() {
 
 function App() {
   return (
-    <div className="flex flex-col lg:flex-row gap-x-4 px-6 lg:px-32">
-      <GridBackgroundDemo />
+    <div className="flex flex-col lg:flex-row gap-y-4 gap-x-4 px-6 lg:px-32">
+      <div className="fixed inset-0 min-h-screen w-full "> {/* Set to z-5 for background */}
+        <GridBackgroundDemo />
+      </div>
       <LeftColumn />
       <RightColumn />
     </div>
