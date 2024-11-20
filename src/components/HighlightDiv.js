@@ -41,7 +41,7 @@ function HighlightDiv() {
 
     return (
         // <div className="relative p-0 h-auto lg:flex lg:flex-col lg:justify-between lg:space-y-4"> -- mobile view 
-        <div className="flex flex-col items-center p-4 lg:items-start lg:flex-col lg:justify-between lg:space-y-4 text-center lg:text-left max-w-xs lg:max-w-full mx-auto">
+        <div className="flex flex-col items-center p-4 lg:items-start lg:flex-col lg:justify-between lg:space-y-4 text-center lg:text-left max-w-xs lg:max-w-full mx-auto ">
 
             {/* Name Section */}
             {/* <div className="relative flex  items-center"> -- mobile view*/}

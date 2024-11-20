@@ -73,3 +73,9 @@ html{
   }
 }
 
+/* floating icons darkmode */
+
+.icon-cloud-container {
+  color: white; /* Ensure text/icons are visible */
+}
+

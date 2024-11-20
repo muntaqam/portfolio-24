@@ -13,7 +13,10 @@ import NetflixClone from '../images/Netflix.png'
 const Cards = () => {
     return (
         <div>
-            <section id="experience" className='mb-10' >
+            <section id="experience" class="mt-[7.5rem] md:mt-[7.5rem] lg:mt-0 mb-10">
+                {/* Title */}
+                <h2 className="text-2xl font-bold text-white text-center mb-[1rem] ">Experience</h2>
+
 
                 <ExperienceCard
                     role="Stem Consultant"
@@ -50,6 +53,8 @@ const Cards = () => {
 
 
             <section id="projects" className='pb-20'>
+                {/* Title */}
+                <h2 className="text-2xl font-bold text-white text-center mb-8">My Projects</h2>
                 <ProjectCard
                     title="GreatReads"
                     description="A Goodreads clone that allows users to find and track their favorite books."

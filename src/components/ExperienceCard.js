@@ -2,6 +2,8 @@ import React from 'react';
 
 const ExperienceCard = ({ role, company, duration, description }) => {
     return (
+
+        
         <div className="flex space-x-4 text-white p-4 rounded-lg shadow-md mb-4 hover:bg-slate-800/50 transition duration-300 cursor-pointer group ">
 
             <div className="w-1/3 mt-2">

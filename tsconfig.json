@@ -1,12 +1,19 @@
 {
     "compilerOptions": {
-        "jsx": "react", // Ensure JSX is enabled
-        "allowJs": true, // Allow JavaScript files
-        "noEmit": true, // Do not output compiled JS files
-        "esModuleInterop": true, // For proper import handling
-        "moduleResolution": "node"
+        "jsx": "react",
+        "allowJs": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "baseUrl": ".", // Change base URL to the root directory
+        "paths": {
+            "@/components/*": [
+                "@/components/*"
+            ] // Map "@/components" to its current location
+        }
     },
     "include": [
         "src/**/*"
-    ]
+, "@/components/ui/icon-cloud.tsx"  ,
+"@/components/ui/icon-cloud.tsx" ]
 }
