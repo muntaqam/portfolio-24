@@ -1,14 +1,9 @@
 "use client";
-
 import React, { useEffect, useMemo, useState } from "react";
-import {
-  Cloud,
-  fetchSimpleIcons,
-  renderSimpleIcon,
-} from "react-icon-cloud";
+import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
 // Cloud customization options for dark mode
-export const cloudProps = {
+const cloudProps = {
   containerProps: {
     style: {
       display: "flex",
@@ -22,21 +17,21 @@ export const cloudProps = {
   options: {
     reverse: true,
     depth: 1,
-    wheelZoom: false,
+    wheelZoom: false, // Disable zooming
     imageScale: 2,
     activeCursor: "default",
     tooltip: "native",
     initial: [0.1, -0.1],
     clickToFront: 500,
     tooltipDelay: 0,
-    outlineColour: "#0000",
-    maxSpeed: 0.02,
+    outlineColour: "#0000", // Transparent outline
+    maxSpeed: 0.03,
     minSpeed: 0.005,
   },
 };
 
 // Render icons with static white color
-export const renderCustomIcon = (icon) => {
+const renderCustomIcon = (icon) => {
   const bgHex = "#080510"; // Fixed dark background
   const fallbackHex = "#ffffff"; // Fixed white icon color
   const minContrastRatio = 2; // Ensure good contrast
@@ -84,7 +79,8 @@ const iconSlugs = [
   "pytorch",
   "figma",
   "python",
-  "vercel"
+  "vercel",
+  "pandas"
 ];
 
 const IconCloud = () => {
@@ -109,10 +105,7 @@ const IconCloud = () => {
         <Cloud {...cloudProps}>{renderedIcons}</Cloud>
       </div>
     </div>
-
   );
-
-
 };
 
 export default IconCloud;
