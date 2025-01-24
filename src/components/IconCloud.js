@@ -19,6 +19,7 @@ const cloudProps = {
     depth: 1,
     wheelZoom: false, // Disable zooming
     imageScale: 2,
+    dragControl: true,
     activeCursor: "default",
     tooltip: "native",
     initial: [0.1, -0.1],
@@ -27,6 +28,7 @@ const cloudProps = {
     outlineColour: "#0000", // Transparent outline
     maxSpeed: 0.03,
     minSpeed: 0.005,
+
   },
 };
 
@@ -61,7 +63,6 @@ const iconSlugs = [
   "java",
   "react",
   "flutter",
-  "html5",
   "css3",
   "nodedotjs",
   "express",
@@ -80,7 +81,10 @@ const iconSlugs = [
   "figma",
   "python",
   "vercel",
-  "pandas"
+  "pandas",
+  "tailwindcss"
+
+
 ];
 
 const IconCloud = () => {
