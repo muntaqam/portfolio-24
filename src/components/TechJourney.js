@@ -30,7 +30,7 @@ function TechJourney() {
             {/* Fourth paragraph */}
             <p className="text-slate-300  text-base text-left mb-2">
                 Outside of tech, I love reading, hiking, watching video essays, and spending quality time with
-                friends. These activities keep me grounded and inspired, fueling my creativity in the tech world.
+                family & friends. These activities keep me grounded and inspired, fueling my creativity in the tech world.
             </p>
 
             {/* Fifth paragraph */}
