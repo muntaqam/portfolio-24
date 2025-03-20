@@ -10,7 +10,7 @@ import PomodoroImage from '../images/Pomodoro.png'
 import ImageStitch from '../images/ImageStitch.png'
 import NetflixClone from '../images/Netflix.png'
 import SalesForecaster from '../images/SalesForecaster.png'
-import HIMYM from '../images/HIMYM.png'
+import HIMYM from '../images/Himym.png'
 const Cards = () => {
     return (
         <div>
@@ -96,6 +96,15 @@ const Cards = () => {
                     skills={["React", "JavaScript", "CSS"]}
                     imageSrc={FoodleImage}
                 />
+
+                <ProjectCard
+                    title="HIMYM Transcript Scraper"
+                    description="A Python script that scrapes and compiles transcripts from the TV show How I Met Your Mother for data analysis and NLP tasks."
+                    link="https://github.com/muntaqam/HIMYM_transcript_scraper"
+                    skills={["Python", "Web Scraping", "BeautifulSoup", "NLP"]}
+                    imageSrc={HIMYM}
+                />
+
 
                 <ProjectCard
                     title="Image Processing"
