@@ -82,7 +82,8 @@ const iconSlugs = [
   "python",
   "vercel",
   "pandas",
-  "tailwindcss"
+  "tailwindcss",
+  "next-js"
 
 
 ];
