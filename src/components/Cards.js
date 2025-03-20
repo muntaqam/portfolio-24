@@ -28,13 +28,13 @@ const Cards = () => {
                 <ExperienceCard
                     role="Coding Instructor"
                     company="LogicFusion"
-                    duration="July 2015 — Dec 2015"
+                    duration="Jan 2020 — Mar 2022"
                     description="Taught game development with Pygame and GameMaker Studio 2.0, focusing on coding fundamentals and project-based learning."
                 />
                 <ExperienceCard
                     role="Software Engineering Intern"
                     company="University at Buffalo"
-                    duration="July 2015 — Dec 2015"
+                    duration="Aug 2022 — Feb 2023"
                     description="Contributed to the front-end development of a responsive, accessible gamified web app using HTML, CSS, and JavaScript for the annual UB leadership conference."
                 />
 
