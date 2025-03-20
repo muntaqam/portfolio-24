@@ -10,7 +10,7 @@ import PomodoroImage from '../images/Pomodoro.png'
 import ImageStitch from '../images/ImageStitch.png'
 import NetflixClone from '../images/Netflix.png'
 import SalesForecaster from '../images/SalesForecaster.png'
-
+import HIMYM from '../images/HIMYM.png'
 const Cards = () => {
     return (
         <div>
@@ -23,7 +23,7 @@ const Cards = () => {
                     role="Stem Consultant"
                     company="CUNY Queens College"
                     duration=" Aug 2024 — Present"
-                    description="Lead recitations for CSE 111 and 211 and manage the STEM Center, supporting students in debugging, algorithms, and problem-solving."
+                    description="Lead recitations for CSE111 and CSE211 and manage the STEM Center, supporting students in debugging, algorithms, and problem-solving."
                 />
                 <ExperienceCard
                     role="Coding Instructor"
