@@ -10,7 +10,7 @@ const ProjectCard = ({ title, description, link, skills, imageSrc }) => {
         >
             <div className="flex space-x-4 text-white p-4 rounded-lg shadow-md mb-4 hover:bg-slate-800/50 transition duration-300 cursor-pointer group">
                 <div className="w-1/3 mt-2">
-                    {imageSrc && <img src={imageSrc} alt={title} className="w-full h-auto rounded mb-2" />}
+                    {imageSrc && <img src={imageSrc} alt={title} className="w-full aspect-[16/9] bg-[#1a1a1a] rounded mb-2 overflow-hidden" />}
                 </div>
                 <div className="w-2/3 mt-1">
                     <h3 className="text-lg font-bold group-hover:text-teal-300 flex items-center">

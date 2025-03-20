@@ -9,6 +9,7 @@ import BubbleSortImage from '../images/BubbleSort.png'
 import PomodoroImage from '../images/Pomodoro.png'
 import ImageStitch from '../images/ImageStitch.png'
 import NetflixClone from '../images/Netflix.png'
+import SalesForecaster from '../images/SalesForecaster.png'
 
 const Cards = () => {
     return (
@@ -22,19 +23,19 @@ const Cards = () => {
                     role="Stem Consultant"
                     company="CUNY Queens College"
                     duration=" Aug 2024 — Present"
-                    description="Conduct workshops for CSCI 111, supporting 30+ students weekly. Enhanced students' problem-solving skills through hands-on debugging and test case writing."
+                    description="Lead recitations for CSE 111 and 211 and manage the STEM Center, supporting students in debugging, algorithms, and problem-solving."
                 />
                 <ExperienceCard
                     role="Coding Instructor"
                     company="LogicFusion"
                     duration="July 2015 — Dec 2015"
-                    description="Developed and maintained production code for client websites."
+                    description="Taught game development with Pygame and GameMaker Studio 2.0, focusing on coding fundamentals and project-based learning."
                 />
                 <ExperienceCard
                     role="Software Engineering Intern"
                     company="University at Buffalo"
                     duration="July 2015 — Dec 2015"
-                    description=" Contributed to the front-end development of a gamified web application for a leadership conference. By emphasizing responsive and accessible design, I enhanced user engagement and improved overall usability."
+                    description="Contributed to the front-end development of a responsive, accessible gamified web app using HTML, CSS, and JavaScript for the annual UB leadership conference."
                 />
 
                 <a
@@ -72,6 +73,15 @@ const Cards = () => {
                 />
 
                 <ProjectCard
+                    title="Sales Forecast ETL"
+                    description="An ETL pipeline that extracts, transforms, and loads sales data to forecast future product performance."
+                    link="https://github.com/muntaqam/Sales_forecast_ETL"
+                    skills={["Python", "Pandas", "AWS S3", "Machine Learning"]}
+                    imageSrc={SalesForecaster}
+                />
+
+
+                <ProjectCard
                     title="Road Weather"
                     description="An app providing real-time weather forecasts for road trips."
                     link="https://github.com/muntaqam/RoadWeather2.0"
@@ -107,7 +117,7 @@ const Cards = () => {
 
                 <ProjectCard
                     title="Netflix Clone"
-                    description="A clone of the Netflix platform for streaming movies and shows."
+                    description="A clone of the Home Page of the Netflix platform for streaming movies and shows."
                     link="https://meek-belekoy-24182b.netlify.app/"
                     skills={["React", "Firebase", "CSS"]}
                     imageSrc={NetflixClone}
