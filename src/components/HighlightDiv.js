@@ -58,13 +58,14 @@ function HighlightDiv() {
                     <h2 className="mt-1 text-lg font-medium tracking-tight text-teal-400 sm:text-xl">
                         Software Engineer
                     </h2>
+                    {/* Description */}
+                    <p className="mt-2 max-w-xs text-center leading-normal text-slate-400">
+                        Transforming ideas into solutions.
+                    </p>
                 </div>
             </div>
 
-            {/* Description */}
-            <p className="mt-2 max-w-xs leading-normal text-slate-400">
-                Transforming ideas into solutions through hands-on projects.
-            </p>
+
 
             {/* Navigation Links */}
             <nav className="nav hidden lg:block" aria-label="In-page jump links">
