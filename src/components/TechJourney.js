@@ -19,7 +19,7 @@ function TechJourney() {
                     url="https://greattreads.netlify.app/"
                     imageSrc="/greatsc.png"
                     isStatic
-                    className="font-bold text-teal-400 underline"
+                    className="font-bold text-teal-400 underline cursor-pointer"
                 >
                     GreatReads,
                 </LinkPreview>{" "}
@@ -40,7 +40,7 @@ function TechJourney() {
                     url="/Muntaqa_Maahi_Resume.pdf"
                     imageSrc="/resumesc.png"  // Correct image path from public folder
                     isStatic
-                    className="font-bold text-teal-400 underline"
+                    className="font-bold text-teal-400 underline cursor-pointer"
                 >
                     resume
                 </LinkPreview>{" "}
