@@ -1,6 +1,6 @@
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
-import { PointerHighlight } from "./ui/pointer-highlight";
+
 function TechJourney() {
     return (
         <div className="flex justify-center items-start h-auto flex-col px-4">
