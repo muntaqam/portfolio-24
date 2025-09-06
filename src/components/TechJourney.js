@@ -1,15 +1,12 @@
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
-
+import { PointerHighlight } from "./ui/pointer-highlight";
 function TechJourney() {
     return (
         <div className="flex justify-center items-start h-auto flex-col px-4">
             {/* First paragraph */}
             <p className="text-slate-300 dark:text-neutral-200 text-base text-left mb-2">
-                My journey into tech began with crafting websites on Wix and customizing
-                backgrounds on Tumblr, sparked by my fascination after watching a Steve Jobs movie.
-                I've always had a passion for technology, enjoying the thrill of experimenting with anything
-                electronic that I could get my hands on.
+                My journey into tech started with building websites and customizing my tumblr page, which grew into a deep interest in designing useful, thoughtful products. I earned a B.S. in Computer Science and completed a data analytics course, strengthening both my engineering foundations and my ability to reason with data.
             </p>
 
             {/* Second paragraph */}

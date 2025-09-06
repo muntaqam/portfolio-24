@@ -11,6 +11,8 @@ import ImageStitch from '../images/ImageStitch.png'
 import NetflixClone from '../images/Netflix.png'
 import SalesForecaster from '../images/SalesForecaster.png'
 import HIMYM from '../images/Himym.png'
+import JumbleImage from '../images/jumble_banner.png'
+
 const Cards = () => {
     return (
         <div>
@@ -63,6 +65,14 @@ const Cards = () => {
                     link="https://greattreads.netlify.app/"
                     skills={["React", "Next.js", "TailwindCSS", "Supabase"]}
                     imageSrc={GreatReadsImage}
+                />
+
+                <ProjectCard
+                    title="Jumble (In Progress)"
+                    description="Multiplayer party game platform · 2-engineer project · Implementing WebSockets to enable real-time rooms and gameplay."
+                    link="https://jumble-nine.vercel.app/"
+                    skills={["TypeScript", "Node.js", "git", "Websockets"]}
+                    imageSrc={JumbleImage}
                 />
 
                 <ProjectCard
